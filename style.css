@@ -1,0 +1,249 @@
+/*font-family: 'Roboto', sans-serif;  */
+* {
+    margin: 0;
+    /*MARGEM*/
+    padding: 0;
+    /*PREENCHIMENTO */
+    box-sizing: border-box;
+    /*DIMENSIONAMENTO DE CAIXA */
+    font-family: 'Roboto', sans-serif;
+    /* FONTE FAMILIA*/
+    outline: none;
+    /*CONTORNO */
+}
+
+.video-bg {
+    height: 100vh;
+    /*AUTURA*/
+    position: fixed;
+    /*POSIÇÃO*/
+    top: 0;
+    /*INICIO*/
+    left: 0;
+    /*ESQUERDA*/
+    z-index: -1;
+    /*INDICE Z*/
+}
+
+.mascara {
+    /*height: 100vh; nivel de transparecia*/
+    width: 100vw;
+    /*LARGURA*/
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 0%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 100%);
+    /*FUNDO GRADIENTE LINEAR*/
+    position: fixed;
+    /*POSIÇÃO*/
+    top: 0;
+    /*INICIO*/
+    left: 0;
+    /*ESQUERDA*/
+    z-index: -1;
+    /*INDICE Z*/
+}
+
+video {
+    min-height: 100%;
+    /*MIN-AUTURA*/
+    height: 125vh;
+    /*AUTURA*/
+    min-width: 100%;
+    /*LARGURA MINIMA*/
+    position: fixed;
+    /*POSIÇÃO*/
+    top: 0;
+    /*INICIO*/
+    left: -75%;
+    /*ESQUERDA*/
+    z-index: -1;
+    /*INDICE Z*/
+}
+
+main {
+    /* PRINCIPAL*/
+    width: 375px;
+    /*LARGURA*/
+    background: #d5dfe0;
+    /*FUNDO*/
+    border-radius: 20px;
+    /*RAIO DA BORDA*/
+    margin: 40px auto 40px;
+    /*MARGEM*/
+    padding: 44px 24px 23px;
+    /*PREENCHIMENTO*/
+}
+
+label {
+    /*ROTULO*/
+    color: #090909;
+    /*COR*/
+    font-weight: 400;
+    /*ESPESSURA DA FONTE*/
+    font-size: 14px;
+    /*TAMANHO DA FONTE*/
+}
+
+select,
+/* SELECIONAR*/
+input {
+    /*ENTRADA*/
+    background: #FFFFFF;
+    /*FUNDI*/
+    border: 1px solid #f9fff9;
+    /*FRONTEIRA*/
+    border-radius: 4px;
+    /*RAIO DA BORDA*/
+    height: 48px;
+    /*AUTURA*/
+    width: 100%;
+    /*LARGURA*/
+    margin-bottom: 24px;
+    /*MARGEM INFERIOR*/
+    appearance: none;
+    /*APARENCIA NENHUMA*/
+    padding-left: 18px;
+    /*PREENCHIMENTO ESQUERDO*/
+    font-weight: 700;
+    /*ESPESURA DA FONTE*/
+    font-size: 16px;
+    /*TAMANHO DA FONTE*/
+    color: #0e0d0d;
+    /* =COR*/
+    cursor: pointer;
+    /*CURSOR*/
+}
+
+button {
+    /*ENTRADA*/
+    background: #dfc21ff0;
+    /*FUNDO*/
+    border-radius: 5px;
+    /*RAIO DA BORDA*/
+    width: 100%;
+    /*LARGURA*/
+    border: none;
+    /*FRONTEIRA*/
+    height: 48px;
+    /*ALTURA*/
+    color: #151414;
+    /* =COR*/
+    font-size: 18px;
+    /*TAMANHO DA FONTE*/
+    font-weight: 700;
+    /* espessura da fonte*/
+    cursor: pointer;
+    /*CURSOR PONTEIRO*/
+}
+
+button:hover {
+    /*BOTÃO PAIRAR */
+    opacity: 0.9;
+    /*OPACIDADE*/
+}
+
+button:active {
+    /*BOTAO ATIVADO*/
+    opacity: 0.7;
+    /*OPACIDADE*/
+}
+
+section {
+    /* seção*/
+    border: 1px solid #772fd3;
+    /*FRONTEIRA*/
+    border-radius: 20px;
+    /*RAIO DA BORDA*/
+    margin-top: 36px;
+    /*MARGEM SUPERIOR*/
+    padding: 12px;
+    /*PREENCHIMENTO*/
+    display: flex;
+    /*MOSTRAR FLEXIVEL*/
+    flex-direction: column;
+    /*DIREÇÃO FLEXIVEL COLUNA*/
+    align-items: center;
+    /*ALINHAR ITENS NO CENTRO*/
+}
+
+.arrow-img {
+    /* seta imagem*/
+    margin: 15px 0;
+    /*margem */
+}
+
+.currency-box {
+    /*CAIXA DE MODEDA*/
+    display: flex;
+    /*MOSTRAR FLEXIVEL*/
+    flex-direction: column;
+    /*DIREÇÃO FLEXIVEL COLUNA*/
+    align-items: center;
+    /*ALINHAR ITENS CENTRO*/
+    gap: 4px;
+    /*BREXA*/
+}
+
+.currency {
+    /*MOEDA*/
+    color: #0d0d0d;
+    /*COR*/
+    font-size: 14px;
+    /*TAMANHO DA FONTE*/
+}
+
+.currency-value,
+/*VALOR DA MOEDA*/
+.corrency-value-to-convert {
+    /*VALOR DE CORRESPONDENCIA PARA CONVERSAO*/
+    color: #0c0c0c;
+    /*COR*/
+    font-weight: 700;
+    /*ESPESSURA DA FONTE*/
+    font-size: 20px;
+    /*TAMANHO DA FONTE*/
+}
+
+@media screen and (min-width: 500px) {
+
+    /*MEDIA TELA E LAGURA MINIMA*/
+    main {
+        /*PRINCIPAL*/
+        width: 400px;
+        /*AUTURA*/
+    }
+
+    video {
+        left: -90%;
+        /*ESQUERDA*/
+    }
+}
+
+@media screen and (min-width: 1030px) {
+    /*MEDIA TELA E LAGURA MINIMA*/
+
+    video {
+        left: 0%;
+        /*ESQUERDA*/
+    }
+
+    main {
+        padding: 20px;
+        /*ACOLCHOAMENTO*/
+        flex-direction: row;
+        /*FLEX DIREÇÃO LINHA*/
+        justify-content: space-between;
+        /*JUSTIFICAR CONTEUDO ESPAÇO ENTRE*/
+        height: auto;
+        /*AUTURA AUTO*/
+        gap: 20px;
+    }
+
+    section {
+        /*SECÇÃO*/
+
+        width: 100%;
+        /*AUTURA*/
+        justify-content: center;
+        /*JUSTIFICAR CONTEUDO AO CENTRO*/
+    }
+
+}
