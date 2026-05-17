@@ -67,12 +67,10 @@ O projeto utiliza integração com API para buscar cotações atualizadas e ofer
 
 ## 📸 Preview
 
-> Adicione aqui screenshots do projeto.
-
 Exemplo:
 
 ```md
-![preview](preview.png)
+(preview.png)
 ```
 
 ---
