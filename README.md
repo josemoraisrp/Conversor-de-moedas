@@ -70,7 +70,7 @@ O projeto utiliza integração com API para buscar cotações atualizadas e ofer
 Exemplo:
 
 ```md
-(preview.png)
+![preview](./preview.png)
 ```
 
 ---
